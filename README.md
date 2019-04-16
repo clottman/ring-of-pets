@@ -1,3 +1,7 @@
+
+<b>ℹ️ This project was made by [Max Böck](https://github.com/maxboeck/webring) and modified by [An](https://twitter.com/AnTheMaker) to bring it to Glitch.</b>
+
+
 # Webring Starter Kit
 
 A boilerplate to host your own community of sites, also known as a [webring](https://en.wikipedia.org/wiki/Webring).  
@@ -6,6 +10,7 @@ Inspired by posts from [Tatiana Mac](https://twitter.com/TatianaTMac/status/1114
 Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to build a central directory for member sites. People can link to `/prev`, `/random` and `/next` and be redirected to members of the ring.
 
 ✏️ Explanatory [Blog Post](https://mxb.dev/blog/webring-kit/)
+
 
 ## Features
 
