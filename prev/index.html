@@ -16,6 +16,8 @@
     crossorigin="anonymous"></script>
   <script>
   $.getJSON("/data/members.json", function(data){
+    var referrer = document.referrer;
+    
     var site = data[Math.floor(Math.random()*data.length)];
     var url = site.url;
     $('#url').attr('href', url);

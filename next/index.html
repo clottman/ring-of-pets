@@ -16,10 +16,17 @@
     crossorigin="anonymous"></script>
   <script>
   $.getJSON("/data/members.json", function(data){
+    var referrer = document.referrer;
+    var referrerURL = new URL(referrer);
+    var referrerHostname = referrerURL.hostname;
+    $.each(data, function(key, val){
+      var valURL = new URL(val.url);
+      var valHostname = valURL.hostname;
+    });
     var site = data[Math.floor(Math.random()*data.length)];
     var url = site.url;
     $('#url').attr('href', url);
-    location = url;
+    //location = url;
   });
   </script>
 </body>

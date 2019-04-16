@@ -34,7 +34,9 @@ module.exports = function(config) {
     })
 
     config.addPassthroughCopy('src/data')
+    config.addPassthroughCopy('prev')
     config.addPassthroughCopy('random')
+    config.addPassthroughCopy('next')
 
     return {
         dir: {
