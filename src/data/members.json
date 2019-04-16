@@ -8,5 +8,15 @@
         "title": "Subgap",
         "url": "https://subgap.glitch.me/",
         "feed": ""
+    },
+    {
+        "title": "Fingerprint",
+        "url": "https://fingerprint.glitch.me/",
+        "feed": ""
+    },
+    {
+        "title": "RDIO",
+        "url": "https://rdio.glitch.me/",
+        "feed": ""
     }
 ]
