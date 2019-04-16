@@ -33,7 +33,6 @@ module.exports = function(config) {
         return content
     })
 
-    config.addPassthroughCopy('src/assets/images')
     config.addPassthroughCopy('src/data')
     config.addPassthroughCopy('random')
 

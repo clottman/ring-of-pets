@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>redirecting...</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <p>redirecting...</p>
+  <p>If you aren't redirected, <a id="url" href="">click here</a></p>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+  <script>
+  $.getJSON("/data/members.json", function(data){
+    var site = data[Math.floor(Math.random()*data.length)];
+    var url = site.url;
+    $('#url').attr('href', url);
+    location = url;
+  });
+  </script>
+</body>
+
+</html>
