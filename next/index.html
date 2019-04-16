@@ -19,15 +19,31 @@
     var referrer = document.referrer;
     var referrerURL = new URL(referrer);
     var referrerHostname = referrerURL.hostname;
+    var referrerKey = getKeyOfURL(data, referrerHostname);
+    console.log(referrerKey);
+    if(referrerKey == data.length){ //last element of members
+      var newKey = 0;
+    }else{
+      var newKey = referrerKey + 1;
+    }
+    var site = data[newKey];
+    var url = site.url;
+    $('#url').attr('href', url);
+    location = url;
+  });
+    
+  function getKeyOfURL(data, referrerHostname){
+    var theKey = 0;
     $.each(data, function(key, val){
       var valURL = new URL(val.url);
       var valHostname = valURL.hostname;
+      if(valHostname == referrerHostname){
+        theKey = key;
+        return;
+      }
     });
-    var site = data[Math.floor(Math.random()*data.length)];
-    var url = site.url;
-    $('#url').attr('href', url);
-    //location = url;
-  });
+    return theKey;
+  }
   </script>
 </body>
 </html>
