@@ -14,14 +14,11 @@ layout: base
 
     <h2>How to join</h2>
     <p>
-        To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
+        To join the webring, <a href="{{ meta.admins[0].contact }}">contact {{ meta.admins[0].name }}</a> (admin)
         and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
     </p>
-    <p>
-        If you don't have a Github account, you can also use this form to sign up:
-    </p>
-
-    {% include 'signupform.njk' %}
+    
+    <!-- {% include 'signupform.njk' %} -->
 
     <p>
         The webring admins will then look at your site and handle your request.
