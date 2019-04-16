@@ -19,15 +19,9 @@
     var referrer = document.referrer;
     var referrerURL = new URL(referrer);
     var referrerHostname = referrerURL.hostname;
-    var referrerKey = $.each(data, function(key, val){
-      var valURL = new URL(val.url);
-      var valHostname = valURL.hostname;
-      if(valHostname == referrerHostname){
-        return key;
-      }
-    });
+    var referrerKey = getKeyOfURL(data, referrerHostname);
     if(referrerKey == 0){ //first element of members
-      var newKey = data.length - 1;
+      var newKey = data.length - 1; //last one
     }else{
       var newKey = referrerKey - 1;
     }
@@ -36,6 +30,19 @@
     $('#url').attr('href', url);
     location = url;
   });
+    
+  function getKeyOfURL(data, referrerHostname){
+    var theKey = 0;
+    $.each(data, function(key, val){
+      var valURL = new URL(val.url);
+      var valHostname = valURL.hostname;
+      if(valHostname == referrerHostname){
+        theKey = key;
+        return;
+      }
+    });
+    return theKey;
+  }
   </script>
 </body>
 </html>

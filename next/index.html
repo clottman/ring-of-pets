@@ -20,7 +20,6 @@
     var referrerURL = new URL(referrer);
     var referrerHostname = referrerURL.hostname;
     var referrerKey = getKeyOfURL(data, referrerHostname);
-    console.log(referrerKey);
     if(referrerKey == data.length){ //last element of members
       var newKey = 0;
     }else{

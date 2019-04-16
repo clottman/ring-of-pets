@@ -1,8 +1,8 @@
 
-<b>ℹ️ This project was made by [Max Böck](https://github.com/maxboeck/webring) and modified by [An](https://twitter.com/AnTheMaker) to bring it to Glitch.</b>
+<b>ℹ️ Mostly coded by [Max Böck](https://github.com/maxboeck/webring) - modified by [An](https://twitter.com/AnTheMaker) in order to bring it to Glitch.</b>
 
 
-# Webring Starter Kit
+# Webring Starter Kit for Glitch
 
 A boilerplate to host your own community of sites, also known as a [webring](https://en.wikipedia.org/wiki/Webring).  
 Inspired by posts from [Tatiana Mac](https://twitter.com/TatianaTMac/status/1114388079630929926) and [Charlie Owen](https://www.sonniesedge.net/posts/webrings).
