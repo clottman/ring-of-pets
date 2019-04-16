@@ -7,8 +7,12 @@ class WebringBanner extends HTMLElement {
 
         this.ringtitle = '{{ meta.title }}';
         this.url = '{{ meta.url }}';
-        this.image = this.url + '/assets/images/{{ meta.image }}';
+        this.image = '{{ meta.image }}';
         this.membercount = {{ members | length}};
+        this.memberwording = 'Members';
+        if(this.membercount == 1){
+          this.memberwording = 'Member';
+        }
 
         this.shadowObj = this.attachShadow({ mode: 'open' });
         this.render();
@@ -143,7 +147,7 @@ class WebringBanner extends HTMLElement {
                 <h3 class="webring-banner__title">
                   <a href="${this.url}">${this.ringtitle}</a>
                 </h3>
-                <span>A webring with ${this.membercount} Members</span>
+                <span>A webring with ${this.membercount} ${this.memberwording}</span>
               </div>
               <a class="webring-banner__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?">?</a>
             </div>

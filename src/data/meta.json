@@ -1,13 +1,13 @@
 {
     "title": "Glitch-fun",
     "description": "This is a webring for all kinds of fun glitch Projects. Be part of the webring!",
-    "image": "freakazoid.jpg",
-    "url": "https://webringdemo.netlify.com",
-    "repo": "https://github.com/maxboeck/webring",
+    "image": "https://cdn.glitch.com/d74aea81-078c-4500-b98a-3c8d921e9c16%2Fglitch-fun.png?1555410939340",
+    "url": "https://glitch-fun.glitch.me/",
+    "repo": "https://glitch.com/~glitch-fun",
     "admins": [
         {
-            "name": "Max Böck",
-            "url": "https://github.com/maxboeck"
+            "name": "An",
+            "url": "https://twitter.com/AnTheMaker"
         }
     ]
 }
