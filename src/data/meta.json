@@ -1,14 +1,13 @@
 {
-    "title": "Glitch-fun webring",
-    "description": "This is a webring for all kinds of fun glitch Projects. Be part of the webring!",
-    "image": "https://cdn.glitch.com/d74aea81-078c-4500-b98a-3c8d921e9c16%2Fglitch-fun.png?1555410939340",
-    "url": "https://webring.glitch.me",
-    "repo": "https://glitch.com/~webring",
+    "title": "Ring of Pets",
+    "description": "Pets can be like family. They can have their own personalities. And they, too, deserve a place on the web all about them.",
+    "image": "https://cdn.glitch.com/1ccf78b9-d496-4e38-8c4a-bfbfba46b6c2%2Fsoul%20patch%20computer.jpg?1556212879485",
+    "url": "https://ring-of-pets.glitch.me",
+    "repo": "https://github.com/clottman/webring",
     "admins": [
         {
-            "name": "An",
-            "url": "https://twitter.com/AnTheMaker",
-            "contact": "https://twitter.com/AnTheMaker"
+            "name": "Cassey Lottman",
+            "url": "https://twitter.com/CasseyLottman"
         }
     ]
 }
