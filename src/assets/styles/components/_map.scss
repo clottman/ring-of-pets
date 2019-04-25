@@ -24,7 +24,7 @@
         }
     }
     &__tooltip {
-        opacity: 0;
+        opacity: 1; /* set as opacity 0 to hide until hover */ 
         font-weight: bold;
     }
     &__node:hover + &__tooltip {
