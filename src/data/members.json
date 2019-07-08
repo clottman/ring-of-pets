@@ -5,8 +5,8 @@
     "feed": null
   },
   {
-    "title": "Soul Patch Upside Down",
-    "url": "https://soul-patch-upside-down.glitch.me",
+    "title": "Kitty",
+    "url": "https://kitty-reviews.glitch.me/",
     "feed": null
   },
   {
@@ -22,6 +22,11 @@
   {
     "title": "Tally",
     "url": "https://tally-cat.glitch.me",
+    "feed": null
+  },
+  {
+    "title": "Soul Patch Upside Down",
+    "url": "https://soul-patch-upside-down.glitch.me",
     "feed": null
   }
 ]
